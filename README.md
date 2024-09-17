@@ -1,14 +1,14 @@
-# Free-Editor
+# MArineFromer
 
-This is the repository that contains the project page of FreeEditor Paper. 
+This is the repository that contains the project page of MarineFormer Paper. 
 
 If you find our paper useful for your work please cite:
 ```
-@misc{karim2023freeeditor,
-      title={Free-Editor: Zero-shot Text-driven 3D Scene Editing}, 
-      author={Nazmul Karim and Umar Khalid and Hasan Iqbal and Jing Hua and Chen Chen},
-      year={2023},
-      eprint={2312.13663},
+@misc{kazemi2024marineformer,
+      title={MarineFormer: A Transformer-based Navigation Policy Model for Collision Avoidance in Marine Environment}, 
+      author={Ehsan Kazemi and Iman Soltani},
+      year={2024},
+      eprint={},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }

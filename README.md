@@ -1,4 +1,4 @@
-# MArineFromer
+# MarineFromer
 
 This is the repository that contains the project page of MarineFormer Paper. 
 

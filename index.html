@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="MarineFormer: Navgation Policy in Marin Environment">
+  <meta name="keywords" content="Reinfocement Learning, Obstacle Avoidance, Transformer, Attention Model">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MarineFormer: Navgation Policy in Marin Environment</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">MarineFormer: A Transformer-based Navigation Policy Model for Collision Avoidance in Marine Environment</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/ehsan-kazemi/">Ehsan Kazemi</a> and </span>
+            <span class="author-block">
+              <a href="https://soltanilab.sf.ucdavis.edu/">Iman Soltani</a>
+            </span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">University of California, Davis</span>
+          </div>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              
+              <span class="link-block">
+                <a href="https://scholar.google.com/citations?user=e9H-xpcAAAAJ&hl=en"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv (Coming Soon!) </span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/ehsankf/MarineFormer"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon!)</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+<!--               <span class="link-block">
+                <a href="https://drive.google.com/drive/folders/15Kr_3JVv1rEoCQL3dOU2An-IePPNsk_6"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div> -->
+
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="row">
+  <div class="column">
+    <span>
+      <img src="./static/images/visual1.gif" alt="Scenario Collision Avoidance" style="width:100%">
+    </span>
+  </div>
+  <div class="column">
+    <img src="./static/images/visual2.gif" alt="Scenario Collision Avoidance" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="./static/images/visual3.gif" alt="Scenario Collision Avoidance" style="width:100%">
+  </div>
+  </div>
+
+  <!--<div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/visual.gif"/>
+    </div>
+    <div>-->
+      <p>
+        <!-- FreeEditor can synthesize novel edited views in a zero-shot manner without scene-specific re-training of the model.
+        To edit a scene, we take only a single image as the starting view and edit it using a T2I diffusion model. Based on this starting view, we can render novel edited target views.-->
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Coming Soon!
+            <!--Text-to-Image (T2I) diffusion models have gained popularity recently due to their multipurpose and easy-to-use
+            nature, e.g. image and video generation as well as editing. However, training a diffusion model specifically for
+            3D scene editing is not straightforward due to the lack of
+            large-scale datasets. To date, editing 3D scenes requires
+            either re-training the model to adapt to various 3D edited
+            scenes or design-specific methods for each special editing
+            type. Furthermore, state-of-the-art (SOTA) methods require
+            multiple synchronized edited images from the same scene
+            to facilitate the scene editing. Due to the current limitations of T2I models, it is very challenging to apply consis-
+            tent editing effects to multiple images, i.e. multi-view inconsistency in editing. This in turn compromises the desired
+            3D scene editing performance if these images are used. In
+            our work, we propose a novel training-free 3D scene editing technique, FREE-EDITOR, which allows users to edit
+            3D scenes without further re-training the model during test
+            time. Our proposed method successfully avoids the multi-
+            view style inconsistency issue in SOTA methods with the
+            help of a “single-view editing” scheme. Specifically, we
+            show that editing a particular 3D scene can be performed
+            by only modifying a single view. To this end, we introduce
+            an Edit Transformer that enforces intra-view consistency
+            and inter-view style transfer by utilizing self- and cross-
+            attention, respectively. Since it is no longer required to
+            re-train the model and edit every view in a scene, the editing time, as well as memory resources, are reduced significantly, e.g., the runtime being ∼ 20× faster than SOTA. We
+            have conducted extensive experiments on a wide range of
+            benchmark datasets and achieve diverse editing capabilities with our proposed technique-->
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+          <img src="./static/images/MarineFormer.png"/>
+    </div>
+    <div>
+    <p>
+     <!--Overview of our proposed method. We train a generalized NeRF (G(.)) that takes a single edited starting view and M source
+views to render a novel target view. Here, ”Edited Target View” is not the input to the model rather will be rendered and works as the ground truth for the
+prediction of G(.). In G(.) we employ a special Edit Transformer that utilizes: cross-attention to produce style-informed source feature maps
+that will be aggregated through an Epipolar Transformer.-->
+    </p>
+    </div>
+  </div>
+</section>
+
+  
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Experimental Results</h2>
+        <!-- Interpolating. -->
+        <h3 class="title is-4">Comparison</h3>
+        <div class="content has-text-justified">
+          <p>
+            <!-- We obtain similar performance as compared to other SOTA techniques.
+            To edit a scene, it only takes around 3 minutes as compared to 70 minutes in SOTA.-->
+          </p>
+        </div>
+          <!-- <img src="./static/images/Comparison.png"
+               alt="Interpolate start reference image."/> -->
+        <div class="content has-text-justified">
+          <p>
+            <!-- More text-based 3D editing results. Free-Editor can handle the diverse prompts-based generation quite well. -->
+          </p>
+        </div>
+          <!-- <img src="./static/images/free_supple.png"/> -->
+        </div>
+  </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code><!--@misc{karim2023freeeditor,
+      title={Free-Editor: Zero-shot Text-driven 3D Scene Editing},
+      author={Nazmul Karim and Umar Khalid and Hasan Iqbal and Jing Hua and Chen Chen},
+      year={2023},
+      eprint={2312.13663},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}--></code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://scholar.google.com/citations?user=e9H-xpcAAAAJ&hl=en">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/ehsankf/MarineFormer" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+             We follow <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of Nerfies for creating this website,
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

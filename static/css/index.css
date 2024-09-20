@@ -163,3 +163,18 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+  /* Example CSS code to customize GIF display */
+  .custom-gif {
+    width: 100pt;
+    height: auto;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+.board custom_img {
+  width: 35.3vw;
+  height: 45.5vh;
+  border-radius: 15%;
+}

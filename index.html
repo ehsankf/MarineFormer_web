@@ -197,31 +197,25 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Coming Soon!
-            <!--Text-to-Image (T2I) diffusion models have gained popularity recently due to their multipurpose and easy-to-use
-            nature, e.g. image and video generation as well as editing. However, training a diffusion model specifically for
-            3D scene editing is not straightforward due to the lack of
-            large-scale datasets. To date, editing 3D scenes requires
-            either re-training the model to adapt to various 3D edited
-            scenes or design-specific methods for each special editing
-            type. Furthermore, state-of-the-art (SOTA) methods require
-            multiple synchronized edited images from the same scene
-            to facilitate the scene editing. Due to the current limitations of T2I models, it is very challenging to apply consis-
-            tent editing effects to multiple images, i.e. multi-view inconsistency in editing. This in turn compromises the desired
-            3D scene editing performance if these images are used. In
-            our work, we propose a novel training-free 3D scene editing technique, FREE-EDITOR, which allows users to edit
-            3D scenes without further re-training the model during test
-            time. Our proposed method successfully avoids the multi-
-            view style inconsistency issue in SOTA methods with the
-            help of a “single-view editing” scheme. Specifically, we
-            show that editing a particular 3D scene can be performed
-            by only modifying a single view. To this end, we introduce
-            an Edit Transformer that enforces intra-view consistency
-            and inter-view style transfer by utilizing self- and cross-
-            attention, respectively. Since it is no longer required to
-            re-train the model and edit every view in a scene, the editing time, as well as memory resources, are reduced significantly, e.g., the runtime being ∼ 20× faster than SOTA. We
-            have conducted extensive experiments on a wide range of
-            benchmark datasets and achieve diverse editing capabilities with our proposed technique-->
+            In this work, we investigate the problem of Unmanned Surface Vehicle (USV) navigation in a dense marine environment
+            with a high-intensity current flow. The complexities arising from static and dynamic obstacles and the disturbance
+            forces caused by current flow render existing navigation protocols inadequate for ensuring safety and avoiding
+            collisions at sea. To learn a safe and efficient robot policy, we propose a novel methodology that leverages attention
+            mechanisms to capture heterogeneous interactions of the agents with the static and moving obstacles and the flow disturbances
+            from the environment in space and time. In particular, we refine a temporal function with MarineFormer, a Transformer navigation
+            policy for spatially variable {\bf Marine} environment, trained end-to-end with reinforcement learning (RL). MarineFormer uses
+            foundational spatio-temporal graph attention with transformer architecture to process spatial attention and temporal sequences
+            in an environment that simulates a 2D turbulent marine condition. We propose architectural modifications that improve the stability
+            and learning speed of the recurrent models. The flow velocity estimation, which can be derived from flow simulations or sensors,
+            is incorporated into a model-free RL framework to prevent the robot from entering into high-intensity current flow regions
+            including intense vortices, while potentially leveraging the flow to assist in transportation. The investigated 2D marine environment
+            encompasses flow singularities, including vortices, sinks, and sources, representing fundamental planar flow patterns associated
+            with flood or maritime thunderstorms. Our proposed method is trained with a new reward model to deal with static and dynamic obstacles
+            and disturbances from the current flow. We evaluate the performance of the proposed deep policy versus the state-of-the-art RL methods
+            and the classical planners. Our method outperforms the existing methods, obtaining $20\%$ improvement over the state-of-the-art baseline
+            model for marine navigation. We attribute the superior performance of the proposed method to several factors including the acquisition
+            of critical sensory information from the environment, optimal design of the network architecture, and the reward functions, tailored
+            to the nature of the obstacles and the environmental disturbances.
           </p>
         </div>
       </div>
